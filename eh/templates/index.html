@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Valentine's Day</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <h1>Happy Valentine's Day! 💕</h1>
+    <pre>                           Click an Icon...</pre>
+    <div class="container">
+        <div class="rose" onclick="showLetter()">
+            🌹
+        </div>
+        <div class="heart" onclick="showPoem()">
+            ❤️
+        </div>
+        <div class="mail" onclick="showPopup()">
+            📬
+        </div>
+    </div>
+
+    <div id="letterModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <p>Write your letter here... </p>
+           
+        </div>
+    </div>
+
+    <div id="poemModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <p>Write your poem here...</p>
+        </div>
+    </div>
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <p>Can I invite you on Februeary 19, 2024 
+                <br>at UPLB Freedom Park to watch the set 
+                <br>of The Ridleys and Cup of Joe?</p>
+            <button onclick="showConfirmation()">Yes</button>
+            <button onclick="showPopup()">No</button>
+        </div>
+    </div>
+
+    <div id="confirmation" class="popup">
+        <div class="popup-content">
+            <p>Thank you, I'll see you there!</p>
+            <button onclick="closeConfirmation()">OK</button>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

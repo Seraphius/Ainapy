@@ -1,0 +1,73 @@
+/* static/style.css */
+body {
+    margin: 20;
+    font-family: Arial, sans-serif;
+    background-color: #E4DEBE;
+}
+
+h1 {
+    color: #ff0000;
+    text-align: center;
+}
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80vh;
+}
+
+.rose, .heart, .mail {
+    font-size: 10em;
+    cursor: pointer;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.popup {
+    display: none;
+    position: absolute;
+    cursor: grab;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-color: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background-color: #fefefe;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.popup:active {
+    cursor: grabbing;
+  }
+/* Add more styles as needed */
